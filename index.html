@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hookify — Gere hooks, legendas e hashtags que convertem</title>
+  <meta name="description" content="Gere hooks, legendas e hashtags virais para TikTok, Reels e Shorts. Ferramentas de geração + encurtador com UTM e analytics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070C12;
+      --card: rgba(255,255,255,.06);
+      --muted: #9BA5B4;
+      --text: #EAF0FF;
+      --brand: #00E0B8;
+      --brand-2: #10B981;
+      --danger: #FF6B6B;
+      --shadow: 0 10px 40px rgba(0,0,0,.45);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box} html,body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#0B1722 0%,#070C12 60%) fixed;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;scroll-behavior:smooth}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;font-size:20px}
+    .brand-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0ff 0%,#06f 100%);box-shadow:var(--shadow)}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:none;border-radius:12px;padding:14px 18px;font-weight:700;cursor:pointer;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);color:#082018;box-shadow:0 8px 30px rgba(16,185,129,.35)}
+    .btn.outline{background:transparent;border:1px solid #1f2c3a;color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin:10px 0 40px}
+    .card{background:var(--card);backdrop-filter: blur(10px); border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(0,224,184,.12);color:var(--brand)}
+    .title{font-size:46px;line-height:1.05;margin:16px 0 8px;font-weight:800;letter-spacing:-.02em}
+    .subtitle{color:var(--muted);font-size:18px}
+    .hero-cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .panel-mock{padding:18px}
+    .panel-mock .row{display:flex;gap:10px;margin-bottom:10px}
+    .input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 14px;color:var(--text)}
+    .results{margin-top:10px;display:grid;gap:8px}
+    .chip{display:inline-flex;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);font-size:12px}
+    .section{margin:60px 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{padding:18px}
+    .muted{color:var(--muted)}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .price-card{padding:22px;border:1px solid rgba(255,255,255,.08)}
+    .price{font-size:38px;font-weight:800}
+    .strike{opacity:.6;text-decoration:line-through}
+    .guarantee{margin-top:10px;font-size:13px;color:var(--muted)}
+    .faq details{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+    .faq summary{cursor:pointer;font-weight:600}
+    .footer{padding:26px 0;color:var(--muted);font-size:13px}
+    @media (max-width:950px){
+      .hero{grid-template-columns:1fr}
+      .grid-3,.pricing{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container nav">
+    <div class="brand">
+      <span class="brand-badge"></span> Hookify
+    </div>
+    <div class="nav-actions">
+      <a class="btn outline" href="#precos">Ver planos</a>
+      <a class="btn" href="SUA_URL_DE_CHECKOUT" target="_blank">Começar agora</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="badge">⚡ Geração + Encurtador + Analytics</span>
+        <h1 class="title">Gere hooks, legendas e hashtags que convertem — em 10 segundos</h1>
+        <p class="subtitle">Pensado para TikTok, Reels e Shorts. Faça A/B test com 1 clique, encurte links com UTM e acompanhe cliques.</p>
+        <div class="hero-cta">
+          <a class="btn" href="SUA_URL_DE_CHECKOUT" target="_blank">Quero o Hookify</a>
+          <a class="btn outline" href="https://johnslade112.github.io/hookify-panel/" target="_blank">Ver demo ao vivo</a>
+        </div>
+        <p class="guarantee">⌛ Acesso vitalício • 🔒 Pagamento seguro • 💸 Garantia 7 dias</p>
+      </div>
+
+      <div class="card panel-mock">
+        <div class="row"><input class="input" placeholder="Nicho: ex. finanças, moda, IA" /><input class="input" placeholder="Plataforma: TikTok" /></div>
+        <div class="row"><input class="input" placeholder="Tom: motivacional" /><input class="input" placeholder="Idioma: Português" /></div>
+        <div class="row"><input class="input" placeholder="CTA: Link na bio" /><input class="input" placeholder="#Hashtags: 5" /></div>
+        <div class="results">
+          <div class="chip">“Se eu começasse do zero hoje, faria isso…”</div>
+          <div class="chip">“Erro que te impede de evoluir — corrige isso em 10s”</div>
+          <div class="chip">“Pare de não ter resultado — faça isso em 7 dias ⬇️”</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section">
+      <h2>Por que o Hookify</h2>
+      <div class="grid-3">
+        <div class="card feature">
+          <h3>🧠 Geração inteligente</h3>
+          <p class="muted">Hooks, legendas e hashtags focados em retenção e CTA — prontos para Shorts/TikTok/Reels.</p>
+        </div>
+        <div class="card feature">
+          <h3>🧪 Teste A/B em 1 clique</h3>
+          <p class="muted">Gere 3 variações por vez e valide em minutos o que mais prende atenção.</p>
+        </div>
+        <div class="card feature">
+          <h3>🔗 Encurtador + UTM + Analytics</h3>
+          <p class="muted">Crie links com parâmetros e acompanhe cliques por campanha diretamente no painel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section">
+      <h2>Como funciona</h2>
+      <ol class="muted">
+        <li>Escolha nicho, plataforma, tom e CTA.</li>
+        <li>Gere 3 variações e copie as melhores.</li>
+        <li>Encute seu link com UTM (bio/descrição).</li>
+        <li>Acompanhe cliques e repita o que funciona.</li>
+      </ol>
+      <p><a class="btn outline" href="https://johnslade112.github.io/hookify-panel/" target="_blank">Abrir Demo</a></p>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="section" id="precos">
+      <h2>Planos</h2>
+      <div class="pricing">
+        <div class="card price-card">
+          <h3>Starter</h3>
+          <p class="muted">Para validar</p>
+          <p><span class="strike">R$ 197</span></p>
+          <p class="price">R$ 97<span style="font-size:16px"> / vitalício</span></p>
+          <ul class="muted">
+            <li>🔹 Geração de hooks/legendas/hashtags</li>
+            <li>🔹 Encurtador com UTM</li>
+            <li>🔹 Analytics básico</li>
+            <li>🔹 Acesso vitalício + updates</li>
+          </ul>
+          <p><a class="btn" href="SUA_URL_DE_CHECKOUT" target="_blank">Comprar agora</a></p>
+          <p class="guarantee">Garantia de 7 dias</p>
+        </div>
+
+        <div class="card price-card" style="border:2px solid rgba(16,185,129,.5)">
+          <h3>Pro (recomendado)</h3>
+          <p class="muted">Para produtores/agências</p>
+          <p><span class="strike">R$ 297</span></p>
+          <p class="price">R$ 147<span style="font-size:16px"> / vitalício</span></p>
+          <ul class="muted">
+            <li>✅ Tudo do Starter</li>
+            <li>✅ Exportar variações (CSV)</li>
+            <li>✅ Templates salvos por nicho</li>
+            <li>✅ Suporte prioritário</li>
+          </ul>
+          <p><a class="btn" href="SUA_URL_DE_CHECKOUT" target="_blank">Quero o Pro</a></p>
+          <p class="guarantee">Garantia de 7 dias</p>
+        </div>
+
+        <div class="card price-card">
+          <h3>Agência</h3>
+          <p class="muted">Time e marca branca</p>
+          <p class="price">Sob consulta</p>
+          <ul class="muted">
+            <li>🔸 Workspaces & equipes</li>
+            <li>🔸 Marca branca</li>
+            <li>🔸 SLA e onboarding</li>
+          </ul>
+          <p><a class="btn outline" href="mailto:seuemail@dominio.com">Falar com time</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <h2>Dúvidas frequentes</h2>
+      <details><summary>Posso usar em qualquer nicho?</summary><p class="muted">Sim. O gerador foi treinado para escrever em linguagem direta e adaptável a diversos nichos.</p></details>
+      <details><summary>Funciona sem ChatGPT?</summary><p class="muted">Sim. Todo o processamento roda na nossa API (Render), sem precisar de chave OpenAI.</p></details>
+      <details><summary>Como vejo os cliques?</summary><p class="muted">Use o encurtador do painel para criar links com UTM e acesse a aba “Ver cliques”.</p></details>
+      <details><summary>Tem garantia?</summary><p class="muted">Sim, 7 dias sem perguntas. Se não curtir, é só pedir reembolso.</p></details>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    Hookify © 2025 • <a href="https://johnslade112.github.io/hookify-panel/" target="_blank">Demo</a> • <a href="https://hookify-api.onrender.com/docs" target="_blank">API Docs</a>
+  </footer>
+
+  <!-- PIXEL/ANALYTICS (opcional) -->
+  <!-- <script>/* Meta/GA aqui quando você tiver */</script> -->
+</body>
+</html>
